@@ -14,8 +14,8 @@ def allowSelfSignedHttps(allowed):
 allowSelfSignedHttps(True)
 
 # Azure endpoint and API key
-url = 'https://creditcarddata-0112133933.uksouth.inference.ml.azure.com/score'
-api_key = 'Y5CGEhRGhb4EhujJjun336kmFq6lyQrj'
+url = ''
+api_key = ''
 
 def make_prediction(data):
     body = json.dumps(data).encode('utf-8')
