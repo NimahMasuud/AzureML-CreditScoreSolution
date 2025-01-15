@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Default Prediction</title>
+</head>
+<body>
+    <h1>Credit Card Default Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="ID">ID:</label><br>
+        <input type="number" id="ID" name="ID" required><br><br>
+
+        <label for="LIMIT_BAL">Limit Balance:</label><br>
+        <input type="number" id="LIMIT_BAL" name="LIMIT_BAL" required><br><br>
+
+        <label for="SEX">Sex:</label><br>
+        <input type="number" id="SEX" name="SEX" required><br><br>
+
+        <label for="EDUCATION">Education:</label><br>
+        <input type="number" id="EDUCATION" name="EDUCATION" required><br><br>
+
+        <label for="MARRIAGE">Marriage:</label><br>
+        <input type="number" id="MARRIAGE" name="MARRIAGE" required><br><br>
+
+        <label for="AGE">Age:</label><br>
+        <input type="number" id="AGE" name="AGE" required><br><br>
+
+        <label for="PAY_1">Payment 1:</label><br>
+        <input type="number" id="PAY_1" name="PAY_1" required><br><br>
+
+        <label for="PAY_2">Payment 2:</label><br>
+        <input type="number" id="PAY_2" name="PAY_2" required><br><br>
+
+        <label for="PAY_3">Payment 3:</label><br>
+        <input type="number" id="PAY_3" name="PAY_3" required><br><br>
+
+        <label for="PAY_4">Payment 4:</label><br>
+        <input type="number" id="PAY_4" name="PAY_4" required><br><br>
+
+        <label for="PAY_5">Payment 5:</label><br>
+        <input type="number" id="PAY_5" name="PAY_5" required><br><br>
+
+        <label for="PAY_6">Payment 6:</label><br>
+        <input type="number" id="PAY_6" name="PAY_6" required><br><br>
+
+        <label for="BILL_AMT1">Bill Amount 1:</label><br>
+        <input type="number" id="BILL_AMT1" name="BILL_AMT1" required><br><br>
+
+        <label for="BILL_AMT2">Bill Amount 2:</label><br>
+        <input type="number" id="BILL_AMT2" name="BILL_AMT2" required><br><br>
+
+        <label for="BILL_AMT3">Bill Amount 3:</label><br>
+        <input type="number" id="BILL_AMT3" name="BILL_AMT3" required><br><br>
+
+        <label for="BILL_AMT4">Bill Amount 4:</label><br>
+        <input type="number" id="BILL_AMT4" name="BILL_AMT4" required><br><br>
+
+        <label for="BILL_AMT5">Bill Amount 5:</label><br>
+        <input type="number" id="BILL_AMT5" name="BILL_AMT5" required><br><br>
+
+        <label for="BILL_AMT6">Bill Amount 6:</label><br>
+        <input type="number" id="BILL_AMT6" name="BILL_AMT6" required><br><br>
+
+        <label for="PAY_AMT1">Payment Amount 1:</label><br>
+        <input type="number" id="PAY_AMT1" name="PAY_AMT1" required><br><br>
+
+        <label for="PAY_AMT2">Payment Amount 2:</label><br>
+        <input type="number" id="PAY_AMT2" name="PAY_AMT2" required><br><br>
+
+        <label for="PAY_AMT3">Payment Amount 3:</label><br>
+        <input type="number" id="PAY_AMT3" name="PAY_AMT3" required><br><br>
+
+        <label for="PAY_AMT4">Payment Amount 4:</label><br>
+        <input type="number" id="PAY_AMT4" name="PAY_AMT4" required><br><br>
+
+        <label for="PAY_AMT5">Payment Amount 5:</label><br>
+        <input type="number" id="PAY_AMT5" name="PAY_AMT5" required><br><br>
+
+        <label for="PAY_AMT6">Payment Amount 6:</label><br>
+        <input type="number" id="PAY_AMT6" name="PAY_AMT6" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+    <h2>Prediction Result: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
